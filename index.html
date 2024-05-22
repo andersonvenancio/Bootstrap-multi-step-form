@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Bootstrap Multi step form  with progress bar</title>
+  <title>Associe-se Anaco</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/css/intlTelInput.css'>
@@ -13,41 +13,54 @@
 <body>
 <!-- partial:index.partial.html -->
 <!-- Multi step form --> 
+
 <section class="multi_step_form">  
   <form id="msform"> 
     <!-- Tittle -->
     <div class="tittle">
-      <h2>Verification Process</h2>
-      <p>In order to use this service, you have to complete this verification process</p>
+      <h2>Seja um associado!</h2>
+      <p>Preencha os campos e siga as instruções abaixo</p>
     </div>
     <!-- progressbar -->
     <ul id="progressbar">
-      <li class="active">Verify Phone</li>  
-      <li>Upload Documents</li> 
-      <li>Security Questions</li>
+      <li class="active">Dados Pessoais</li>  
+      <li>Endereço</li> 
+      <li>Upload Documentos</li>
+      <li>Aceite</li>
     </ul>
     <!-- fieldsets -->
     <fieldset>
-      <h3>Setup your phone</h3>
-      <h6>We will send you a SMS. Input the code to verify.</h6> 
-      <div class="form-row"> 
-        <div class="form-group col-md-6">  
-          <input type="tel" id="phone" class="form-control" placeholder="+880"> 
+      <h3>Dados Pessoais</h3>
+      <h6>Preencha os campos e siga as instruções abaixo</h6> 
+      <div class="done_text" id="validationCustom02"> 
+        <div class="form-group col-md-12">  
+          <input type="text" id="" class="form-control" placeholder="Nome completo" required> 
         </div>  
-        <div class="form-group col-md-6"> 
-          <input type="text" class="form-control" placeholder="1123456789">
-        </div> 
-      </div> 
-      <div class="done_text"> 
-        <a href="#" class="don_icon"><i class="ion-android-done"></i></a> 
-        <h6>A secret code is sent to your phone. <br>Please enter it here.</h6> 
-      </div>  
-      <div class="code_group"> 
-        <input type="text" class="form-control" placeholder="0">
-        <input type="text" class="form-control" placeholder="0">
-        <input type="text" class="form-control" placeholder="0">
-        <input type="text" class="form-control" placeholder="0">
-      </div>  
+        <div class="container">
+          <div class="form-group col-md-6" >
+            <input type="text" id="key" name="cpf" class="form-control" placeholder="Digite seu CPF 000.000.000-00">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" id="key" name="rg" class="form-control" placeholder="Digite seu RG">
+          </div> 
+          </div>
+          <div class="container">
+            <div class="form-group col-md-6" >
+              <input type="text" id="key" name="pis/pasep"  class="form-control" placeholder="Pis / Pasep">
+            </div>
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="inputGroupSelect01">Sexo</label>
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>Escolha...</option>
+                <option value="1">Masculino</option>
+                <option value="2">Feminino</option>
+                <option value="3">Prefiro não informar</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+      
       <button type="button" class="action-button previous_button">Back</button>
       <button type="button" class="next action-button">Continue</button>  
     </fieldset>
@@ -108,6 +121,7 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/js/intlTelInput.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js'></script><script  src="./script.js"></script>
+<script src="cpf.js"></script>
 
 </body>
 </html>
