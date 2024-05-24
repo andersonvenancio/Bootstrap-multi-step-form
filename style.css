@@ -6,8 +6,9 @@
 fieldset {
   background-color: rgba(128, 128, 128, 0.24);
   width:300px;
-  height:500px;
+  height:800px;
 }
+
 .multi_step_form {
   background: #f6f9fb;
   display: block;
@@ -264,9 +265,9 @@ fieldset {
 }
 .multi_step_form #msform #progressbar li {
   list-style-type: none;
-  color: #99a2a8;
+  color: #a3aeb6;
   font-size: 9px;
-  width: calc(100%/3);
+  width: calc(100%/4);
   float: left;
   position: relative;
   font: 500 13px/1 "Roboto", sans-serif;
@@ -337,6 +338,5 @@ fieldset {
 }
 .container  {
   display: flex;
-  
   
 }
